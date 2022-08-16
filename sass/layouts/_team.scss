@@ -1,0 +1,118 @@
+.team {
+  background-color: var(--second-bcg-color);
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-bottom: 10px;
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
+}
+
+.team-name-job {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+  margin-bottom: 16px;
+}
+
+.team-combine {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-list-title {
+  background-color: #ffffff;
+  border: 0px #ffffff solid;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition - плавная смена цвета при ховере */
+}
+
+.team-soc-icon {
+  fill: currentColor;
+}
+
+.team-soc-link:focus,
+  .team-soc-link:hover {
+  background-color: var(--hover-text-color);
+  color: #fff;
+}
+
+  /* второй вариант, как можно сделать смену цвета при ховере на icon: */
+  /* .team-soc-link:hover {
+  background-color: var(--hover-text-color);
+  }
+  .team-soc-link:hover .team-soc-icon {
+  fill: #fff;
+  }
+  .team-soc-icon {
+  fill: var(--icon-color);
+  } */
+
+.team-soc {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+  /* ---------- Постійні клієнти ---------- */
+  /* .icon-client-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  fill: var(--icon-color);
+  align-items: center;
+  justify-content: center;
+  } */
+  
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  fill: var(--icon-color);
+  align-items: center;
+  justify-content: center;
+  outline: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      fill: var(--hover-text-color);
+      border: 1px solid var(--hover-text-color);
+    }
+}
+
+.clients-list {
+  display: flex;
+  margin-top: 50px;
+  gap: 30px;
+}

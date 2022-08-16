@@ -1,0 +1,1019 @@
+@charset "UTF-8";
+:root {
+  --main-text-color: #212121;
+  --second-text-color: #757575;
+  --third-text-color: #ffffff;
+  --hover-text-color: #2196f3;
+  --first-bcg-color: #2f303a;
+  --second-bcg-color: #f5f4fa;
+  --third-bcg-color: #ffffff;
+  --border-color: #eeeeee;
+  --icon-color: #afb1b8;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.hero-btn {
+  display: block;
+  margin: auto;
+  padding: 10px 32px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  background-color: var(--hover-text-color);
+  color: var(--third-text-color);
+  border: none;
+  border-radius: 5px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-btn:hover {
+  cursor: pointer;
+  background-color: #188ce8;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.header {
+  background-color: var(--);
+  border-bottom: 1px solid #ececec;
+}
+
+.header-logo {
+  margin-right: 93px;
+}
+
+.header-contact-link {
+  display: flex;
+  align-items: baseline;
+}
+
+.header-contact-icon {
+  margin-right: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  fill: currentColor;
+  align-items: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-mail:hover .header-contact-icon {
+  fill: var(--hover-text-color);
+  display: inline-block;
+  align-self: center;
+}
+
+/* Тут Данилко розказує про створення лінії для підкреслення current link: https://youtu.be/gtG1pi5EwMY?t=6639 */
+.currentt {
+  position: relative;
+}
+
+.currentt::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: var(--hover-text-color);
+  border-radius: 2px;
+  left: 0;
+  bottom: -3px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-nav .link.current {
+  color: var(--hover-text-color);
+  margin-left: auto;
+}
+
+.header-list {
+  display: flex;
+  gap: 50px;
+}
+
+.header-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--hover-text-color);
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 50px;
+}
+
+.header-logo-studio {
+  color: #000000;
+}
+
+.header-link {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-link:hover, .header-link:focus {
+  color: var(--hover-text-color);
+}
+
+.header-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--second-text-color);
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-contact:hover, .header-contact:focus {
+  color: var(--hover-text-color);
+}
+
+.hero-img {
+  /* max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
+  background-image: url(../images/header.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; */
+  /* display: flex;
+  align-items: center;
+  background-image: linear-gradient (to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); */
+}
+
+.section.hero {
+  max-width: 1600px;
+  max-height: 600px;
+  margin: 0 auto;
+  background-color: var(--first-bcg-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 200px 0;
+}
+
+.hero-title {
+  margin: 0 auto 30px;
+  max-width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--third-text-color);
+}
+
+/* .hero-content {
+  max-width: 696px;
+  padding: 200px auto 30px auto;
+  display: flex;
+  text-align: center;
+} */
+/* .hero {
+  background-color: var(--first-bcg-color);
+  padding: 200px 0;
+} */
+.features-icon-box {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: var(--second-bcg-color);
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.section.features {
+  padding-bottom: 94px;
+}
+
+.features-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  max-width: 270px;
+  margin-bottom: 10px;
+}
+
+.features-text {
+  min-width: 270px;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+
+.features-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* .features-item {
+  max-width: 270px;
+} */
+.section.portfolio {
+  padding-top: 0;
+}
+
+.portfolio {
+  background-color: var(--third-bcg-color);
+  text-align: center;
+}
+
+.clients-title,
+.portfolio-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666666667;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-bottom: 50px;
+}
+
+.portfolio-list {
+  display: flex;
+  /* justify-content: center;  чому не потрібно використовувати?*/
+  gap: 30px;
+}
+
+.portfolio-list-title {
+  background-color: #fff;
+  position: relative;
+}
+
+.portfolio-cover-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  width: 100%;
+  height: 70px;
+  padding: 27px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team {
+  background-color: var(--second-bcg-color);
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-bottom: 10px;
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
+}
+
+.team-name-job {
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+  margin-bottom: 16px;
+}
+
+.team-combine {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-list-title {
+  background-color: #ffffff;
+  border: 0px #ffffff solid;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition - плавная смена цвета при ховере */
+}
+
+.team-soc-icon {
+  fill: currentColor;
+}
+
+.team-soc-link:focus,
+.team-soc-link:hover {
+  background-color: var(--hover-text-color);
+  color: #fff;
+}
+
+/* второй вариант, как можно сделать смену цвета при ховере на icon: */
+/* .team-soc-link:hover {
+background-color: var(--hover-text-color);
+}
+.team-soc-link:hover .team-soc-icon {
+fill: #fff;
+}
+.team-soc-icon {
+fill: var(--icon-color);
+} */
+.team-soc {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* ---------- Постійні клієнти ---------- */
+/* .icon-client-link {
+display: flex;
+width: 170px;
+height: 92px;
+border: 1px solid var(--icon-color);
+border-radius: 4px;
+fill: var(--icon-color);
+align-items: center;
+justify-content: center;
+} */
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  fill: var(--icon-color);
+  align-items: center;
+  justify-content: center;
+  outline: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients-link:hover, .clients-link:focus {
+  fill: var(--hover-text-color);
+  border: 1px solid var(--hover-text-color);
+}
+
+.clients-list {
+  display: flex;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.footer {
+  padding: 60px 0;
+  background-color: var(--first-bcg-color);
+}
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--hover-text-color);
+}
+
+.footer-logo-studio {
+  color: #ffffff;
+}
+
+.footer-list {
+  margin-top: 20px;
+}
+
+.footer-list-item:nth-child(1) {
+  margin-bottom: 10px;
+}
+
+.footer-list-item:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.footer-list-address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
+}
+
+.footer-list-emph {
+  /* margin-bottom: 60px; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-list-emph:hover, .footer-list-emph:focus {
+  color: var(--hover-text-color);
+}
+
+.add-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-add {
+  display: block;
+  margin-left: 70px;
+}
+
+.footer-form-title,
+.footer-add-title {
+  color: var(--third-text-color);
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  /* text-align: left; */
+}
+
+.footer-network {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-network-add {
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--third-text-color);
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 44px;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-network-add:hover, .footer-network-add:focus {
+  background-color: var(--hover-text-color);
+}
+
+/* .footer-icon {
+  width: 20px;
+  height: 20px;
+} */
+.footer-form {
+  margin-left: 93px;
+}
+
+.footerform {
+  display: flex;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  outline: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 0 15px 16px;
+  color: var(--third-text-color);
+  font-weight: 400;
+  font-size: 20px;
+  font-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.footer-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  font-height: 1.25;
+  /* display: flex;
+  align-items: center; */
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-btn {
+  width: 200px;
+  height: 50px;
+  background-color: var(--hover-text-color);
+  color: var(--third-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icon-subscribe {
+  fill: var(--third-text-color);
+}
+
+.footer-btn {
+  fill: var(--hover-text-color);
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-left: 12px;
+}
+
+.footer-btn, .footer-icon-subscribe {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  fill: white;
+  background-color: rgb(68, 69, 78);
+}
+
+.footer-icon-subscribe {
+  background-color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-btn:hover, .footer-icon-subscribe:hover {
+  color: white;
+  background-color: var(--hover-text-color);
+}
+
+.filter {
+  padding: 94px 0 50px;
+  background-color: aqua;
+}
+
+.filter-btn {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  gap: 8px;
+}
+
+.filter-btn-name {
+  padding: 6px 22px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  background-color: var(--second-bcg-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filter-btn-name:hover, .filter-btn-name:focus {
+  cursor: pointer;
+  color: var(--third-text-color);
+  background-color: var(--hover-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.example-link,
+.example-card {
+  flex-basis: calc((100% - 60px) / 3);
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+}
+
+.example-box {
+  position: relative;
+}
+
+/* .example-box:hover .example-cover-text означає: при наведенні курсору на .example-box змінюй текст, а саме - підганяй його до верху */
+.example-card:hover .example-cover-text,
+.example-link:focus .example-cover-text {
+  transform: translateY(0%);
+  /* transition: color #fff 500ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 500ms rgba(33, 150, 243, 0.9); */
+}
+
+/*  */
+.example-box-wrap {
+  position: relative;
+  overflow: hidden;
+  /* overflow: hidden - створює умовный карман в який  ховаєтсья вспливаюче вікно*/
+}
+
+.example-cover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  height: 100%;
+  transform: translateY(100%);
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: auto;
+  /* overflow: auto - дозволяє зявлятись скролу, якщо є переповнення
+  overflow: scroll - скрол буде завжди */
+}
+
+.example-link:focus,
+.example-link:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  outline: transparent;
+}
+
+.examples {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.example-list {
+  padding: 20px 24px;
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+
+.example-name {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-text-color);
+}
+
+.example-type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+
+.backdrop {
+  position: fixed;
+  /* position: fixed - використовується для фіксації на екрані при скролі, збільшенні, зменшенні */
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  /* VW (Viewport Width) & VH (Viewport Height) - відносла ширина і висота екрану */
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.modal {
+  padding: 40px;
+  width: 528px;
+  height: 581px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .modal-icon {
+display: flex;
+background-color: transparent;
+fill: currentColor;
+background-color: transparent;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+/* .modal-close:hover,
+.modal-close:focus {
+background-color: var(--hover-text-color);
+fill: #eeeeee;
+} */
+.modal-close:hover .modal-icon {
+  fill: var(--hover-text-color);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  /* pointer-events: none - забирає можливість перекривання і клацання у прозорого модального вікна */
+}
+
+/* тут Данилко розказує про те, як робитианімацію на модальне вікно https://youtu.be/gtG1pi5EwMY?t=6060 */
+.modal-form {
+  display: inline-block;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.modal-title {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.input-wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.modal-field {
+  margin-bottom: 12px;
+}
+
+.modal-label {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-bottom: 4px;
+}
+
+.input-wrap {
+  /* position: relative; */
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  outline: transparent;
+  cursor: pointer;
+  fill: #000000;
+  transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus ~ .input-modal-icon {
+  fill: var(--hover-text-color);
+}
+
+.modal-text {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding: 12px;
+  outline: transparent;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.input-wrap textarea[name=comment] {
+  padding: 12px 16px;
+}
+
+.modal-contract {
+  color: var(--hover-text-color);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.button-submit {
+  display: flex;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 55px 10px 56px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--third-text-color);
+  background-color: var(--hover-text-color);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-modal-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox,
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.agree-icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.modal-agree {
+  margin-left: 10px;
+}
+
+.checkbox:checked + .agree-icon {
+  background-color: var(--hover-text-color);
+  background-image: url(../images/Vector.svg);
+  border: 2px solid var(--hover-text-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: 50% 50%;
+}
+
+.agree-text {
+  margin-left: 8px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+  outline: transparent;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", "Raleway", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+div {
+  display: block;
+}
+
+.list {
+  list-style: none;
+  /*забирає крапку перед списком*/
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  /*забирає підкреслення посилання*/
+}/*# sourceMappingURL=main.css.map */
