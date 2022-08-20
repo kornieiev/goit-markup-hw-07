@@ -439,15 +439,13 @@
 
         <div class="footer-form">
           <p class="footer-form-title" data-aos="fade-down-left">Підпишіться на розсилку</p>
-          <div class="subscribe-wrapp">
             <form class="footerform">
               <label class="footer-label">
-                <input class="footer-input" type="email" name="email" placeholder="E-mail" />
+                <input class="footer-input" type="email" name="email" placeholder="E-mail   => Тут я зробив фокус/ховер =>" />
               </label>
               <button type="submit" class="footer-btn" >Підписатися<svg class="footer-icon-subscribe" width="24" height="24">
                 <use href="./images/sprite.svg#icon-subscribe"></use></svg></button>
             </form>
-          </div>
         </div>
       </div>
     </footer>
@@ -490,28 +488,25 @@
             </div>
           </div>
 
-          <div class="modal-field">
+          <div class="modal-field-comment">
             <label for="comment" class="modal-label">Коментар</label>
           <div class="input-wrap">
-            <textarea type="text" name="comment" id="comment" placeholder="Введіть текст" class="modal-text"></textarea>
-            <span class="icon"></span>
+            <textarea name="comment" id="comment" placeholder="Введіть текст" class="modal-text modal-input"></textarea>
             </div>
           </div>
 
           <div class="modal-checkbox">
             <label class="checkbox-label">
-              <input class="checkbox hidden" type="checkbox" name="policy" id="policy" required>
-              <span class="agree-icon"></span>
+              <input class="checkbox visually-hidden" type="checkbox" name="policy" id="policy" required>
+              <svg class="agree-icon" width="15" height="15">
+                <use href="./images/sprite.svg#icon-agree-box"></use>
+              </svg>
               <span class="agree-text">
-              Погоджуюся з розсилкою та приймаю &nbsp</span>
+              Погоджуюся з розсилкою та приймаю&nbsp;</span>
               <a href="#" class="modal-contract">Умови договору</a>
-              
             </label>
-
           </div>
-          
           <button type="submit" class="button-submit">Відправити</button>
-
         </form>
       </div>
     </div>
