@@ -1,4 +1,4 @@
-.features-icon-box {
+.features__icon-box {
   display: flex;
   width: 270px;
   height: 120px;
@@ -12,7 +12,7 @@
   padding-bottom: 94px;
 }
 
-.features-subtitle {
+.features__subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -22,7 +22,7 @@
   margin-bottom: 10px;
 }
 
-.features-text {
+.features__subtitle-text {
   min-width: 270px;
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -30,7 +30,7 @@
   color: var(--second-text-color);
 }
 
-.features-list {
+.features__list {
   list-style: none;
   display: flex;
   gap: 30px;

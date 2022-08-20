@@ -1,22 +1,24 @@
-@import './layouts/backdrop';
+@import './base/reset';
+@import './base/common';
 
 @import './utils/vars';
 @import './utils/hidden';
-
-
+@import './utils/placeholder';
 
 @import './components/btn';
 @import './components/container';
-
 
 @import './layouts/header';
 @import './layouts/hero';
 @import './layouts/features';
 @import './layouts/portfolio';
 @import './layouts/team';
+@import './layouts/clients';
 @import './layouts/footer';
+
+@import './layouts/backdrop';
+
 @import './layouts/portfolio-page';
 
 
-@import './base/reset';
-@import './base/common';
+

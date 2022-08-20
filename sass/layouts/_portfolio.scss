@@ -7,29 +7,17 @@
   text-align: center;
   }
 
-.clients-title,
-.portfolio-title,
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
-  margin-bottom: 50px;
-}
-
-.portfolio-list {
+.portfolio__list {
   display: flex;
   gap: 30px;
 }
 
-.portfolio-list-title {
+.portfolio__item {
   background-color: #fff;
   position: relative;
 }
 
-.portfolio-cover-text {
+.portfolio__cover-text {
   position: absolute;
   bottom: 0;
   left: 0;
