@@ -15,7 +15,7 @@
   letter-spacing: 0.03em;
   color: var(--hover-text-color);
 }
-  
+
 .footer-logo-studio {
   color: #ffffff;
 }
@@ -23,12 +23,15 @@
 .footer-list {
   margin-top: 20px;
 }
+
 .footer-list-item:nth-child(1) {
   margin-bottom: 10px;
 }
+
 .footer-list-item:nth-child(2) {
   margin-bottom: 10px;
 }
+
 .footer-list-address {
   font-style: normal;
   font-weight: 400;
@@ -37,8 +40,8 @@
   letter-spacing: 0.03em;
   color: var(--third-text-color);
 }
+
 .footer-list-emph {
-  /* margin-bottom: 60px; */
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -71,6 +74,7 @@
   display: block;
   margin-left: 70px;
 }
+
 .footer-form-title,
 .footer-add-title {
   color: var(--third-text-color);
@@ -104,10 +108,6 @@
       background-color: var(--hover-text-color);
     }
 }
-/* .footer-icon {
-  width: 20px;
-  height: 20px;
-} */
 
 .footer-form {
   margin-left: 93px;
@@ -132,6 +132,7 @@
   font-height: 1.25;
   letter-spacing: 0.03em;
 }
+
 .footer-input::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -179,6 +180,11 @@
   color: white;
   fill: white;
   background-color: rgba(68, 69, 78, 1);
+  &:hover,
+  &:focus {
+    color: white;
+    background-color: var(--hover-text-color);
+  }
 }
 
 .footer-icon-subscribe {
@@ -186,11 +192,3 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-btn:hover, .footer-icon-subscribe:hover {
-  color: white;
-  background-color: var(--hover-text-color);
-}
-.footer-btn:focus, .footer-icon-subscribe:focus {
-  color: white;
-  background-color: var(--hover-text-color);
-}

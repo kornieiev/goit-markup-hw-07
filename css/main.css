@@ -116,13 +116,12 @@
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-input:focus ~ .input-modal-icon {
-  fill: var(--hover-text-color);
+.modal-input:focus {
   border-color: var(--hover-text-color);
 }
 
-.modal-input:focus {
+.modal-input:focus ~ .input-modal-icon {
+  fill: var(--hover-text-color);
   border-color: var(--hover-text-color);
 }
 
@@ -211,12 +210,7 @@
   border-radius: 3px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.agree-icon:hover {
-  fill: var(--hover-text-color);
-}
-
-.agree-icon:focus {
+.agree-icon:hover, .agree-icon:focus {
   fill: var(--hover-text-color);
 }
 
@@ -316,7 +310,6 @@ header .container {
 }
 
 .header {
-  background-color: var(--);
   border-bottom: 1px solid #ececec;
 }
 
@@ -428,20 +421,6 @@ header .container {
   color: var(--hover-text-color);
 }
 
-.hero-img {
-  /* max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 1px solid red;
-  background-image: url(../images/header.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center; */
-  /* display: flex;
-  align-items: center;
-  background-image: linear-gradient (to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); */
-}
-
 .section.hero {
   max-width: 1600px;
   max-height: 600px;
@@ -466,16 +445,6 @@ header .container {
   color: var(--third-text-color);
 }
 
-/* .hero-content {
-  max-width: 696px;
-  padding: 200px auto 30px auto;
-  display: flex;
-  text-align: center;
-} */
-/* .hero {
-  background-color: var(--first-bcg-color);
-  padding: 200px 0;
-} */
 .features-icon-box {
   display: flex;
   width: 270px;
@@ -515,9 +484,6 @@ header .container {
   align-items: center;
 }
 
-/* .features-item {
-  max-width: 270px;
-} */
 .section.portfolio {
   padding-top: 0;
 }
@@ -541,7 +507,6 @@ header .container {
 
 .portfolio-list {
   display: flex;
-  /* justify-content: center;  чому не потрібно використовувати?*/
   gap: 30px;
 }
 
@@ -623,15 +588,13 @@ header .container {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* transition - плавная смена цвета при ховере */
 }
+.team-soc-link:focus, .team-soc-link:hover {
+  background-color: var(--hover-text-color);
+  color: #fff;
+}
 
 .team-soc-icon {
   fill: currentColor;
-}
-
-.team-soc-link:focus,
-.team-soc-link:hover {
-  background-color: var(--hover-text-color);
-  color: #fff;
 }
 
 /* второй вариант, как можно сделать смену цвета при ховере на icon: */
@@ -728,7 +691,6 @@ justify-content: center;
 }
 
 .footer-list-emph {
-  /* margin-bottom: 60px; */
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -790,10 +752,6 @@ justify-content: center;
   background-color: var(--hover-text-color);
 }
 
-/* .footer-icon {
-  width: 20px;
-  height: 20px;
-} */
 .footer-form {
   margin-left: 93px;
 }
@@ -866,25 +824,14 @@ justify-content: center;
   fill: white;
   background-color: rgb(68, 69, 78);
 }
+.footer-btn:hover, .footer-btn:focus, .footer-icon-subscribe:hover, .footer-icon-subscribe:focus {
+  color: white;
+  background-color: var(--hover-text-color);
+}
 
 .footer-icon-subscribe {
   background-color: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-btn:hover, .footer-icon-subscribe:hover {
-  color: white;
-  background-color: var(--hover-text-color);
-}
-
-.footer-btn:focus, .footer-icon-subscribe:focus {
-  color: white;
-  background-color: var(--hover-text-color);
-}
-
-.filter {
-  padding: 94px 0 50px;
-  background-color: aqua;
 }
 
 .filter-btn {
@@ -925,8 +872,10 @@ justify-content: center;
   display: block;
 }
 
-.example-box {
-  position: relative;
+.example-link:focus,
+.example-link:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  outline: transparent;
 }
 
 /* .example-box:hover .example-cover-text означає: при наведенні курсору на .example-box змінюй текст, а саме - підганяй його до верху */
@@ -935,6 +884,10 @@ justify-content: center;
   transform: translateY(0%);
   /* transition: color #fff 500ms cubic-bezier(0.4, 0, 0.2, 1),
   background-color 500ms rgba(33, 150, 243, 0.9); */
+}
+
+.example-box {
+  position: relative;
 }
 
 /*  */
@@ -960,12 +913,6 @@ justify-content: center;
   overflow: auto;
   /* overflow: auto - дозволяє зявлятись скролу, якщо є переповнення
   overflow: scroll - скрол буде завжди */
-}
-
-.example-link:focus,
-.example-link:hover {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  outline: transparent;
 }
 
 .examples {
@@ -998,19 +945,12 @@ justify-content: center;
   color: var(--second-text-color);
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
 
-ul,
-ol {
+ul, ol {
   margin: 0;
   padding-left: 0;
 }
