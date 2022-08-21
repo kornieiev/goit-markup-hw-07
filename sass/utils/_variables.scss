@@ -1,4 +1,5 @@
 :root {
+  --black-color:#000000;
   --main-text-color: #212121;
   --second-text-color: #757575;
   --third-text-color: #ffffff;
@@ -8,4 +9,13 @@
   --third-bcg-color: #ffffff;
   --border-color: #eeeeee;
   --icon-color: #afb1b8;
+  --btn-hover-color: #188ce8;
+
+}
+
+.navigation__logo--black {
+  color: var(--black-color)
+}
+.navigation__logo--white {
+  color: var(--third-text-color);
 }

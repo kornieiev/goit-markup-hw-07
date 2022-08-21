@@ -26,7 +26,7 @@
   fill: currentColor;
   align-items: center;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
 
 .contacts__mail:hover .contacts__icon {
   fill: var(--hover-text-color);
@@ -35,11 +35,9 @@
 }
 
   /* Тут Данилко розказує про створення лінії для підкреслення current link: https://youtu.be/gtG1pi5EwMY?t=6639 */
-.currentt {
-  position: relative;
-}
 
-.currentt::after {
+
+.navigation__current::after {
   position: absolute;
   content: '';
   width: 100%;
@@ -53,9 +51,10 @@
 .navigation {
   display: flex;
   align-items: center;
-    .link.current {
+    .link.navigation__current {
     color: var(--hover-text-color);
     margin-left: auto;
+    position: relative;
     }
   }
 
@@ -69,10 +68,6 @@
   align-items: center;
   margin-left: auto;
   gap: 50px;
-}
-
-.header__logo-studio {
-  color: #000000;
 }
 
 .navigation__link {

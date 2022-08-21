@@ -19,7 +19,7 @@
   padding: 40px;
   width: 528px;
   height: 581px;
-  background-color: #fff;
+  background-color: var(--third-bcg-color);
   border-radius: 4px;
   position: absolute;
   top: 50%;
@@ -107,7 +107,7 @@ letter-spacing: 0.03em;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--second-text-color);
   margin-bottom: 4px;
 }
 
@@ -161,26 +161,6 @@ letter-spacing: 0.03em;
   letter-spacing: 0.03em;
   cursor: pointer;
   border-bottom: 1px solid var(--hover-text-color);
-}
-
-.button-submit {
-  display: flex;
-  /* margin-top: 30px; */
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 55px 10px 56px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--third-text-color);
-  background-color: var(--hover-text-color);
-  border: 1px solid transparent;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-modal-icon {

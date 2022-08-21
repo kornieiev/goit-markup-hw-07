@@ -16,10 +16,6 @@
   color: var(--hover-text-color);
 }
 
-.footer__logo-studio {
-  color: #ffffff;
-}
-
 .address__list {
   margin-top: 20px;
 }
@@ -63,7 +59,7 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--third-text-color);
 }
 
 //   
@@ -173,12 +169,12 @@
   align-self: center;
   justify-content: center;
   gap: 10px;
-  color: white;
-  fill: white;
+  color: var(--third-text-color);
+  fill: var(--third-bcg-color);
   background-color: rgba(68, 69, 78, 1);
   &:hover,
   &:focus {
-    color: white;
+    color: var(--third-text-color);
     background-color: var(--hover-text-color);
   }
 }
